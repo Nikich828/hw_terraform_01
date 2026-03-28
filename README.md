@@ -92,20 +92,28 @@
 
 1.
 
-![1](https://github.com/Nikich828/hw_docker/blob/main/20.jpg)
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/1.JPG)
 
-![1](https://github.com/Nikich828/hw_docker/blob/main/20.jpg)
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/1.1.JPG)
 
 2.
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/2.JPG)
 
 Секретную информацию необходимо хранить в personal.auto.tfvars
 
 3.
 
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/4.JPG)
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/5.JPG)
+
 ```bash
 "result": "8vjeRJDWtrkbNskW"
 ```
 4.
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/6.JPG)
 
 В resourse не хватает nginx, на него ссылается в ниже стоящем resourse в image
 
@@ -115,6 +123,7 @@ resource "docker_container" "1nginx" {
 ```
 Далее некорреткное название имя ресурса 1nginx ,уберем 1.
 
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/7.JPG)
 теперь нвоые ошибки
 random_string_FAKE такого ресурса не существуеют, пишем паврильно random_string
 
@@ -137,13 +146,40 @@ resource "docker_container" "docker_nginx" {
   }
 
 ```
+5.
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/8.JPG)
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/9.JPG)
 
 6.
+
+Было 
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/10.JPG)
+
+Стало
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/11.JPG)
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/12.JPG)
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/13.JPG)
 
 Опасность заключатеся в том, что автоматически применяет изменения без подтвержжения юзера, проблема в том что эти изменения могут быть критичискими и привести к плохим последствиям.
 Скорее всего будет полезно при автоматическом развертывании, где не возможно интерактивно подвердить.
 
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/14.JPG)
+
 7.
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/15.JPG)
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/16.JPG)
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/17.JPG)
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/18.JPG)
 
 ```bash
 {
@@ -158,6 +194,8 @@ resource "docker_container" "docker_nginx" {
 ```
 
 8.
+
+![1](https://github.com/Nikich828/hw_terraform_01/blob/main/19.JPG)
 
 ```bash
 resource "docker_image" "nginx" {
